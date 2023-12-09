@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="592.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupchat_with_gui.Controller">
+   <children>
+      <Button fx:id="button_send" layoutX="520.0" layoutY="446.0" mnemonicParsing="false" text="Send" />
+      <TextField fx:id="tf_message" layoutX="30.0" layoutY="446.0" prefHeight="26.0" prefWidth="484.0" />
+      <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30.0" layoutY="70.0" prefHeight="362.0" prefWidth="533.0">
+        <content>
+                  <VBox fx:id="vbox_messages" layoutX="121.0" prefHeight="248.0" prefWidth="412.0" />
+        </content>
+      </ScrollPane>
+      <Label layoutX="217.0" layoutY="20.0" text="NUST Messenger" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="65.0" layoutX="140.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Ismaeel\IdeaProjects\GroupChat_with_GUI\src\main\java\com\example\groupchat_with_gui\nust-logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
